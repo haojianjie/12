@@ -135,6 +135,23 @@ int main(){
         }
          if(code == 7)
         {
+            double aver;
+            double pingjun = 0;
+            int sn = 0;
+            for(int i = 0; i < index; i++)
+            {
+                aver = (arr[i].yuwen + arr[i].shuxue + arr[i].yingyu) / 3;
+                if (pingjun < aver)
+                {
+                    pingjun = aver;
+                    sn = i + 1;
+                }
+            }
+            printf("di%dmingxuesheng%sdepingjunchengjizuigao,zuigaowen%f\n", sn,arr[sn - 1].name,pingjun);
+            printf("shaixuanwancheng,dianjihuichejixu\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
             
         }
          if(code == 8)
