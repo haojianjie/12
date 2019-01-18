@@ -30,14 +30,57 @@ int main(){
 
         if(code == 1)
         {
+            printf("qingshuruxueshengxingming:\n");
+            scanf("%s",(arr[index].name));
 
+            printf("qingshuruxueshengyuwenchengji\n");
+            scanf("%d",&(arr[index].yuwen));
+
+             printf("qingshuruxueshengshuxuechengji\n");
+            scanf("%d",&(arr[index].shuxue));
+
+            printf("qingshuruxueshengyingyuchengji\n");
+            scanf("%d",&(arr[index].yingyu));
+
+            index++;
+
+            printf("tianjiawanchengdianjihuichejixu\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
          if(code == 2)
         {
+            printf("shanchuxueshengchengji\n");
+            if(index > 0)
+            {
+                index--;
+                printf("shanchuxueshengchengji,dianjihuichejixu\n");
+                char xx;
+                scanf("%c",&xx);
+                scanf("%c",&xx);
+            }
+            else
+            {
+                printf("wuxueshengxixin,shanchuxibai,dianjihuichejixu\n");
+                char x;
+                scanf("%c",&x);
+                scanf("%c",&x);
+            }
             
         }
          if(code == 3)
         {
+            printf("suoyouxueshengchengjiruxia\n");
+            for(int i = 0; i < index;i++)
+            {
+                printf("di %d dgexueshengdexingmingwei:%s,ywsjw:%d,sxcjw:%d,yycjw:%d\n",i+1,arr[i].name,arr[i].shuxue,arr[i].yingyu);
+
+            }
+            printf("\ndianjihuichejixu\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
             
         }
          if(code == 4)
